@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alissaosoresconsulting.lovable.app/sitemap.xml
+Sitemap: https://alissaosores.com/sitemap.xml
