@@ -17,7 +17,7 @@ const BlogPost = () => {
 
   if (!post) return <Navigate to="/blog" replace />;
 
-  const url = `https://alissaosoresconsulting.lovable.app/blog/${post.slug}`;
+  const url = `https://alissaosores.com/blog/${post.slug}`;
   const formattedDate = new Date(post.date).toLocaleDateString("es-PE", {
     year: "numeric",
     month: "long",
