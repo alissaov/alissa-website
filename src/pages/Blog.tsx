@@ -22,7 +22,7 @@ const Blog = () => {
           name="description"
           content="Artículos sobre operaciones, mejora de procesos y automatización para PYMEs en crecimiento. Aprende a ordenar tu negocio."
         />
-        <link rel="canonical" href="https://alissaosoresconsulting.lovable.app/blog" />
+        <link rel="canonical" href="https://alissaosores.com/blog" />
         <meta property="og:title" content="Blog | Alissa Osores Consulting" />
         <meta
           property="og:description"
@@ -34,13 +34,13 @@ const Blog = () => {
             "@context": "https://schema.org",
             "@type": "Blog",
             name: "Blog Alissa Osores Consulting",
-            url: "https://alissaosoresconsulting.lovable.app/blog",
+            url: "https://alissaosores.com/blog",
             blogPost: blogPosts.map((p) => ({
               "@type": "BlogPosting",
               headline: p.title,
               description: p.excerpt,
               datePublished: p.date,
-              url: `https://alissaosoresconsulting.lovable.app/blog/${p.slug}`,
+              url: `https://alissaosores.com/blog/${p.slug}`,
             })),
           })}
         </script>
