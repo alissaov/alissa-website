@@ -1,50 +1,17 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./OmaCarga.css";
 
 export default function OmaCarga() {
-  const [code, setCode] = useState("");
-  const [isAllowed, setIsAllowed] = useState(false);
-  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  useEffect(() => {
+    const hasAccess = sessionStorage.getItem("caseStudiesAccess");
 
-    if (code === "1756") {
-      setIsAllowed(true);
-      setError("");
-      return;
+    if (hasAccess !== "true") {
+      navigate("/projects");
     }
-
-    setError("Clave incorrecta. Inténtalo nuevamente.");
-    setCode("");
-  };
-
-  if (!isAllowed) {
-    return (
-      <main className="oma-lock-page">
-        <section className="oma-lock-card">
-          <p className="oma-eyebrow">Private Case Study</p>
-          <h1>Acceso privado</h1>
-          <p>Ingresa la clave de 4 dígitos para ver este case study.</p>
-
-          <form onSubmit={handleSubmit} className="oma-lock-form">
-            <input
-              type="password"
-              inputMode="numeric"
-              maxLength={4}
-              placeholder="••••"
-              value={code}
-              onChange={(event) => setCode(event.target.value)}
-            />
-
-            <button type="submit">Ingresar</button>
-          </form>
-
-          {error && <p className="oma-lock-error">{error}</p>}
-        </section>
-      </main>
-    );
-  }
+  }, [navigate]);
 
   return (
     <main className="oma-page">
