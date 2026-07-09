@@ -217,6 +217,128 @@
 
 /* Pantalla de clave */
 .oma-lock-page {
+  .oma-callout {
+  margin-top: 28px;
+  max-width: 920px;
+  border-left: 4px solid #c61c64;
+  background: #fff7fb;
+  color: #08264a;
+  padding: 20px 24px;
+  border-radius: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.oma-complexity-grid,
+.oma-solution-grid,
+.oma-impact-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.oma-complexity-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.oma-solution-grid,
+.oma-impact-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.oma-complexity-grid article,
+.oma-solution-grid article,
+.oma-impact-grid article {
+  background: white;
+  border: 1px solid #d8e0ea;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(8, 38, 74, 0.06);
+}
+
+.oma-complexity-grid h3,
+.oma-solution-grid h3,
+.oma-impact-grid h3 {
+  margin: 0 0 10px;
+  color: #08264a;
+  font-size: 1.05rem;
+}
+
+.oma-complexity-grid p,
+.oma-solution-grid p,
+.oma-impact-grid p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.oma-solution-grid span,
+.oma-impact-grid span {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f9dce9;
+  color: #c61c64;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.oma-impact-grid strong {
+  display: block;
+  margin-top: 18px;
+  color: #c61c64;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.oma-metric {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 260px));
+  gap: 18px;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.oma-metric div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.oma-metric span {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.oma-metric p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+}
+
+.oma-outcome-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0;
+  margin: 32px 0 0;
+  list-style: none;
+}
+
+.oma-outcome-list li {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #c61c64;
+  padding: 14px 16px;
+  border-radius: 14px;
+}
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -315,7 +437,12 @@
   .oma-grid,
   .oma-modules,
   .oma-decisions,
-  .oma-list {
+  .oma-list,
+  .oma-complexity-grid,
+  .oma-solution-grid,
+  .oma-impact-grid,
+  .oma-outcome-list,
+  .oma-metric {
     grid-template-columns: 1fr;
   }
 
