@@ -47,20 +47,21 @@ export default function OmaCarga() {
       </main>
     );
   }
-  return (
+   return (
     <main className="oma-page">
       <section className="oma-hero">
         <p className="oma-eyebrow">Product Owner Case Study</p>
         <h1>OMA Carga</h1>
         <p className="oma-subtitle">
-          Website corporativo, cotizador en línea y panel administrativo para una
-          operación logística aeroportuaria.
+          De un rediseño web a una plataforma operativa para consulta,
+          cotización y gestión interna.
         </p>
 
         <div className="oma-tags">
           <span>Product Owner</span>
           <span>Logística aeroportuaria</span>
           <span>Website + Cotizador + Admin</span>
+          <span>UX + Automatización + Escalabilidad</span>
         </div>
       </section>
 
@@ -74,18 +75,18 @@ export default function OmaCarga() {
           </article>
 
           <article className="oma-card">
-            <p>Industria</p>
-            <h3>Logística aeroportuaria / carga aérea</h3>
-          </article>
-
-          <article className="oma-card">
             <p>Producto</p>
-            <h3>Website + Cotizador + Panel Administrativo</h3>
+            <h3>Website + Cotizador en línea + Panel administrativo</h3>
           </article>
 
           <article className="oma-card">
-            <p>Foco</p>
-            <h3>Modernización digital, automatización y escalabilidad</h3>
+            <p>Participación</p>
+            <h3>Definición funcional, priorización, flujos y gestión de alcance</h3>
+          </article>
+
+          <article className="oma-card">
+            <p>Timeline impact</p>
+            <h3>Estimado: 5 meses → Avance: ~2.5 meses</h3>
           </article>
         </div>
       </section>
@@ -93,100 +94,96 @@ export default function OmaCarga() {
       <section className="oma-section oma-white">
         <h2>Client Context</h2>
         <p>
-          OMA Carga forma parte del ecosistema de servicios aeroportuarios y
-          logísticos asociados a OMA, con una operación orientada a usuarios que
-          requieren información, servicios y cotización de procesos relacionados
-          con carga, importación, exportación, aerolíneas y servicios
-          misceláneos.
+          OMA Carga necesitaba modernizar su presencia digital y mejorar la
+          forma en que sus usuarios consultaban servicios y generaban
+          cotizaciones.
         </p>
         <p>
-          El proyecto nace como una iniciativa para modernizar su presencia
-          digital, mejorar la experiencia de cotización y dejar una estructura
-          tecnológica escalable para futuras funcionalidades como marketplace,
-          integraciones con sistemas internos y chatbot.
+          La necesidad inicial era rediseñar el website, pero el proyecto
+          evolucionó hacia una solución más completa: una plataforma modular con
+          sitio corporativo, cotizador en línea, gestión de contenidos y panel
+          administrativo.
         </p>
+
+        <div className="oma-callout">
+          El objetivo no era solo mejorar la apariencia del sitio, sino
+          convertirlo en una herramienta operativa y comercial.
+        </div>
       </section>
 
       <section className="oma-section oma-highlight">
-        <h2>The Challenge</h2>
-        <p className="oma-big-text">
-          El reto no era solo rediseñar una web, sino convertirla en una
-          herramienta operativa y comercial.
+        <h2>Challenge & Complexity</h2>
+        <p>
+          El reto principal era transformar reglas operativas de carga
+          aeroportuaria en una experiencia digital clara, guiada y confiable.
+        </p>
+        <p>
+          El cotizador debía considerar variables como recinto, tipo de
+          movimiento, fechas, peso, valor comercial, tipo de cambio, servicios
+          adicionales, cantidades obligatorias y reglas de almacenaje.
         </p>
 
-        <ul className="oma-list">
-          <li>Cotizador con reglas operativas complejas.</li>
-          <li>Tipo de cambio capturado manualmente.</li>
-          <li>Servicios misceláneos sin filtrado por ciudad o recinto.</li>
-          <li>Campos de cantidad obligatorios poco claros.</li>
-          <li>Reglas por tipo de operación: importación y exportación.</li>
-          <li>Necesidad de generar cotizaciones más claras y confiables.</li>
-        </ul>
+        <div className="oma-complexity-grid">
+          <article>
+            <h3>Reglas variables</h3>
+            <p>Servicios aplicables por ciudad, recinto o escenario operativo.</p>
+          </article>
+
+          <article>
+            <h3>Riesgo de errores</h3>
+            <p>Cálculos sensibles a tipo de cambio, cantidades y datos operativos.</p>
+          </article>
+
+          <article>
+            <h3>Misceláneos complejos</h3>
+            <p>Conceptos con cantidades específicas que debían reflejarse en el resumen.</p>
+          </article>
+
+          <article>
+            <h3>Múltiples usuarios</h3>
+            <p>Experiencia pensada para importadores, exportadores y aerolíneas.</p>
+          </article>
+
+          <article>
+            <h3>Escalabilidad</h3>
+            <p>Base preparada para integraciones, marketplace, chatbot o nuevos módulos.</p>
+          </article>
+        </div>
       </section>
 
       <section className="oma-section">
         <h2>Product Solution</h2>
         <p>
-          Se propuso una plataforma modular, administrable y responsive,
-          diseñada para mejorar la experiencia de usuarios externos y facilitar
-          la gestión interna del equipo de OMA Carga.
+          Se propuso una plataforma modular, responsive y administrable,
+          diseñada para funcionar como canal comercial, herramienta de consulta
+          y base para futuras capacidades digitales.
         </p>
 
-        <div className="oma-modules">
-          <div>Home</div>
-          <div>Servicios</div>
-          <div>Cotizador</div>
-          <div>Blog / Noticias</div>
-          <div>Bolsa de trabajo</div>
-          <div>Panel administrativo</div>
-        </div>
-      </section>
-
-      <section className="oma-section oma-white">
-        <h2>My Role as Product Owner</h2>
-        <p>
-          Mi rol fue conectar la necesidad operativa del cliente con una solución
-          funcional, clara y ejecutable para diseño y desarrollo.
-        </p>
-
-        <ul className="oma-list">
-          <li>Levantamiento y ordenamiento del alcance funcional.</li>
-          <li>Definición de módulos y flujos principales.</li>
-          <li>Priorización de funcionalidades críticas.</li>
-          <li>Validación de reglas del cotizador.</li>
-          <li>Coordinación entre stakeholders, diseño, desarrollo y PM.</li>
-          <li>Seguimiento de acuerdos, pendientes y cambios de alcance.</li>
-        </ul>
-      </section>
-
-      <section className="oma-section">
-        <h2>Key Product Decisions</h2>
-
-        <div className="oma-decisions">
+        <div className="oma-solution-grid">
           <article>
             <span>01</span>
-            <h3>Cotizador como flujo guiado</h3>
+            <h3>Website corporativo</h3>
             <p>
-              Para reducir errores y facilitar el uso por parte de usuarios
-              externos.
+              Presentación institucional, servicios, noticias, clientes, bolsa de
+              trabajo y contacto.
             </p>
           </article>
 
           <article>
             <span>02</span>
-            <h3>Automatización del tipo de cambio</h3>
+            <h3>Cotizador en línea</h3>
             <p>
-              Para evitar inconsistencias cuando el valor comercial se capture
-              en dólares.
+              Flujo guiado con campos claros, validaciones, reglas de cálculo,
+              servicios adicionales y resumen.
             </p>
           </article>
 
           <article>
             <span>03</span>
-            <h3>Filtrado por ciudad o recinto</h3>
+            <h3>Panel administrativo</h3>
             <p>
-              Para mostrar únicamente servicios aplicables a la operación
-              seleccionada.
+              Gestión interna de contenidos, clientes, noticias, postulaciones,
+              cotizaciones y configuraciones clave.
             </p>
           </article>
 
@@ -194,18 +191,89 @@ export default function OmaCarga() {
             <span>04</span>
             <h3>Arquitectura modular</h3>
             <p>
-              Para permitir crecimiento futuro hacia marketplace, integraciones
-              o chatbot.
+              Base preparada para crecer sin rehacer toda la plataforma.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="oma-section oma-white">
+        <h2>My Role & Product Decisions</h2>
+        <p>
+          Mi rol como Product Owner fue ordenar la complejidad, traducir
+          necesidades operativas en decisiones de producto y alinear al cliente
+          con diseño, desarrollo y project management.
+        </p>
+
+        <div className="oma-impact-grid">
+          <article>
+            <span>01</span>
+            <h3>Ordené el alcance funcional</h3>
+            <p>
+              Estructuré el proyecto en módulos claros para facilitar
+              seguimiento, priorización y coordinación.
+            </p>
+            <strong>Scope management · Functional discovery · Modular thinking</strong>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Traducí operación en UX</h3>
+            <p>
+              Convertí reglas del cotizador en campos requeridos, validaciones,
+              filtros, reglas de cálculo y lógica para servicios adicionales.
+            </p>
+            <strong>Product thinking · UX strategy · Operations to technology</strong>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Impulsé un cotizador más confiable</h3>
+            <p>
+              Propuse un flujo más guiado para reducir errores al capturar
+              variables como recinto, fechas, peso, valor comercial y previos.
+            </p>
+            <strong>Functional analysis · Process improvement · Risk detection</strong>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Detecté fricciones de experiencia</h3>
+            <p>
+              Identifiqué riesgos como exceso de servicios visibles, falta de
+              idiomas requeridos y servicios no aplicables por ciudad o recinto.
+            </p>
+            <strong>UX review · User-centered thinking · Prioritization</strong>
           </article>
 
           <article>
             <span>05</span>
-            <h3>Administración interna</h3>
+            <h3>Diseñé para distintos perfiles</h3>
             <p>
-              Para que OMA pueda actualizar contenidos sin depender
-              constantemente del equipo técnico.
+              Organicé la experiencia considerando importadores, exportadores y
+              aerolíneas.
             </p>
+            <strong>User segmentation · Product structure · Information architecture</strong>
+          </article>
+
+          <article>
+            <span>06</span>
+            <h3>Alineé negocio, diseño y desarrollo</h3>
+            <p>
+              Convertí feedback y dudas funcionales en próximos pasos claros
+              para el equipo.
+            </p>
+            <strong>Stakeholder management · Technical coordination · Communication</strong>
+          </article>
+
+          <article>
+            <span>07</span>
+            <h3>Cuidé la escalabilidad</h3>
+            <p>
+              Priorizamos arquitectura modular y panel administrativo para
+              soportar futuras funcionalidades.
+            </p>
+            <strong>Product vision · Scalable design · Admin panels</strong>
           </article>
         </div>
       </section>
@@ -213,20 +281,51 @@ export default function OmaCarga() {
       <section className="oma-outcome">
         <h2>Outcome</h2>
         <p>
-          El proyecto quedó definido como una plataforma digital escalable,
-          administrable y orientada a mejorar la experiencia de consulta y
-          cotización de servicios.
+          El proyecto fue estimado inicialmente en aproximadamente{" "}
+          <strong>5 meses de desarrollo</strong>. Con una gestión activa del
+          alcance, seguimiento constante y coordinación cercana entre cliente,
+          diseño, desarrollo y project management, logramos avanzar la
+          implementación en aproximadamente <strong>2.5 meses</strong>.
         </p>
+        <p>
+          Más que un rediseño web, la solución evolucionó hacia una plataforma
+          digital escalable, administrable y orientada a mejorar la experiencia
+          de consulta y cotización.
+        </p>
+
+        <div className="oma-metric">
+          <div>
+            <span>5 meses</span>
+            <p>Estimación inicial</p>
+          </div>
+          <div>
+            <span>2.5 meses</span>
+            <p>Avance logrado</p>
+          </div>
+        </div>
+
+        <ul className="oma-outcome-list">
+          <li>Reducción significativa del tiempo frente a la estimación inicial.</li>
+          <li>Cotizador más claro, guiado y menos propenso a errores.</li>
+          <li>Reglas operativas traducidas en lógica funcional.</li>
+          <li>Servicios organizados por contexto y perfil de usuario.</li>
+          <li>Mayor autonomía para el equipo interno mediante panel administrativo.</li>
+          <li>Plataforma preparada para crecimiento futuro.</li>
+        </ul>
 
         <div className="oma-skills">
           <span>Product Ownership</span>
-          <span>Discovery funcional</span>
+          <span>Functional Discovery</span>
+          <span>Requirement Gathering</span>
           <span>Stakeholder Management</span>
           <span>UX Strategy</span>
-          <span>Requirement Gathering</span>
           <span>Scope Management</span>
           <span>Product Thinking</span>
           <span>Technical Coordination</span>
+          <span>Admin Panels</span>
+          <span>Quoting Flows</span>
+          <span>Modular Product Design</span>
+          <span>Operations to Technology Translation</span>
         </div>
       </section>
     </main>
