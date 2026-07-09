@@ -24,10 +24,9 @@ export default function OmaCarga() {
       <main className="oma-lock-page">
         <section className="oma-lock-card">
           <p className="oma-eyebrow">Private Case Study</p>
-          <h1>OMA Carga</h1>
+          <h1>Acceso privado</h1>
           <p>
-            Este proyecto es parte del portafolio privado. Ingresa la clave de
-            4 dígitos para continuar.
+            Ingresa la clave de 4 dígitos para ver este case study..
           </p>
 
           <form onSubmit={handleSubmit} className="oma-lock-form">
