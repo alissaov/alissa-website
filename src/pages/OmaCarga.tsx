@@ -1,6 +1,53 @@
+import { useState } from "react";
 import "./OmaCarga.css";
 
 export default function OmaCarga() {
+    const [code, setCode] = useState("");
+  const [isAllowed, setIsAllowed] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (code === "1756") {
+      setIsAllowed(true);
+      setError("");
+      return;
+    }
+
+    setError("Clave incorrecta. Inténtalo nuevamente.");
+    setCode("");
+  };
+
+  if (!isAllowed) {
+    return (
+      <main className="oma-lock-page">
+        <section className="oma-lock-card">
+          <p className="oma-eyebrow">Private Case Study</p>
+          <h1>OMA Carga</h1>
+          <p>
+            Este proyecto es parte del portafolio privado. Ingresa la clave de
+            4 dígitos para continuar.
+          </p>
+
+          <form onSubmit={handleSubmit} className="oma-lock-form">
+            <input
+              type="password"
+              inputMode="numeric"
+              maxLength={4}
+              placeholder="••••"
+              value={code}
+              onChange={(event) => setCode(event.target.value)}
+            />
+
+            <button type="submit">Ingresar</button>
+          </form>
+
+          {error && <p className="oma-lock-error">{error}</p>}
+        </section>
+      </main>
+    );
+  }
   return (
     <main className="oma-page">
       <section className="oma-hero">
