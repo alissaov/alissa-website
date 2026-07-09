@@ -5,6 +5,8 @@
   font-family: Inter, Arial, sans-serif;
 }
 
+/* Hero */
+
 .oma-hero {
   padding: 96px 10% 72px;
   background:
@@ -20,7 +22,7 @@
   font-size: 0.78rem;
   font-weight: 700;
   color: #c61c64;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .oma-hero h1 {
@@ -55,9 +57,21 @@
   box-shadow: 0 10px 24px rgba(8, 38, 74, 0.06);
 }
 
+/* Sections */
+
 .oma-section,
 .oma-outcome {
   padding: 72px 10%;
+}
+
+.oma-white {
+  background: white;
+}
+
+.oma-highlight {
+  background:
+    radial-gradient(circle at top right, rgba(198, 28, 100, 0.08), transparent 32%),
+    #fff7fb;
 }
 
 .oma-section h2,
@@ -75,9 +89,20 @@
   line-height: 1.8;
 }
 
-.oma-white {
-  background: white;
+.oma-section-header {
+  max-width: 820px;
+  margin-bottom: 40px;
 }
+
+.oma-section-header h2 {
+  margin-bottom: 18px;
+}
+
+.oma-section-header p:last-child {
+  margin: 0;
+}
+
+/* Project Snapshot */
 
 .oma-grid {
   display: grid;
@@ -106,118 +131,9 @@
   color: #08264a;
 }
 
-.oma-highlight {
-  background: #fff7fb;
-}
+/* Client Context */
 
-.oma-big-text {
-  font-size: 1.35rem !important;
-  color: #08264a !important;
-  font-weight: 600;
-}
-
-.oma-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  padding: 0;
-  margin-top: 32px;
-  list-style: none;
-}
-
-.oma-list li {
-  background: white;
-  border-left: 4px solid #c61c64;
-  padding: 16px 18px;
-  border-radius: 14px;
-  color: #344054;
-  box-shadow: 0 10px 24px rgba(8, 38, 74, 0.05);
-}
-
-.oma-modules {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 32px;
-}
-
-.oma-modules div {
-  background: white;
-  color: #08264a;
-  border: 1px solid #d8e0ea;
-  padding: 24px;
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  box-shadow: 0 18px 40px rgba(8, 38, 74, 0.06);
-}
-
-.oma-decisions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.oma-decisions article {
-  background: white;
-  border: 1px solid #d8e0ea;
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 18px 40px rgba(8, 38, 74, 0.06);
-}
-
-.oma-decisions span {
-  display: inline-flex;
-  width: 42px;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #f9dce9;
-  color: #c61c64;
-  font-weight: 800;
-  margin-bottom: 18px;
-}
-
-.oma-decisions h3 {
-  margin: 0 0 10px;
-  color: #08264a;
-}
-
-.oma-decisions p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.oma-outcome {
-  background: #08264a;
-  color: white;
-}
-
-.oma-outcome h2,
-.oma-outcome p {
-  color: white;
-}
-
-.oma-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 32px;
-}
-
-.oma-skills span {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 0.92rem;
-}
-
-/* Pantalla de clave */
-.oma-lock-page {
-  .oma-callout {
+.oma-callout {
   margin-top: 28px;
   max-width: 920px;
   border-left: 4px solid #c61c64;
@@ -229,25 +145,117 @@
   line-height: 1.6;
 }
 
-.oma-complexity-grid,
-.oma-solution-grid,
-.oma-impact-grid {
+/* Challenge & Complexity */
+
+.oma-complexity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.oma-complexity-card {
+  min-height: 230px;
+  background: white;
+  border: 1px solid #d8e0ea;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 18px 45px rgba(8, 38, 74, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oma-complexity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(8, 38, 74, 0.1);
+}
+
+.oma-complexity-card-wide {
+  grid-column: span 2;
+}
+
+.oma-card-icon {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff1f7;
+  color: #c61c64;
+  border-radius: 16px;
+  font-size: 1.35rem;
+}
+
+.oma-complexity-card h3 {
+  margin: 0 0 10px;
+  color: #08264a;
+  font-size: 1.05rem;
+}
+
+.oma-complexity-card p {
+  margin: 0;
+  color: #3d5873;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+/* Product Solution */
+
+.oma-solution-list {
   display: grid;
   gap: 18px;
   margin-top: 32px;
 }
 
-.oma-complexity-grid {
-  grid-template-columns: repeat(5, 1fr);
+.oma-solution-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 26px;
+  align-items: center;
+  background: white;
+  border: 1px solid #d8e0ea;
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 18px 45px rgba(8, 38, 74, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.oma-solution-grid,
+.oma-solution-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 56px rgba(8, 38, 74, 0.09);
+}
+
+.oma-solution-item span {
+  color: #c61c64;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.oma-solution-item h3 {
+  margin: 0 0 8px;
+  color: #08264a;
+  font-size: 1.15rem;
+}
+
+.oma-solution-item p {
+  margin: 0;
+  max-width: 760px;
+  color: #3d5873;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+/* My Role & Product Decisions */
+
 .oma-impact-grid {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 32px;
 }
 
-.oma-complexity-grid article,
-.oma-solution-grid article,
 .oma-impact-grid article {
   background: white;
   border: 1px solid #d8e0ea;
@@ -256,23 +264,6 @@
   box-shadow: 0 18px 40px rgba(8, 38, 74, 0.06);
 }
 
-.oma-complexity-grid h3,
-.oma-solution-grid h3,
-.oma-impact-grid h3 {
-  margin: 0 0 10px;
-  color: #08264a;
-  font-size: 1.05rem;
-}
-
-.oma-complexity-grid p,
-.oma-solution-grid p,
-.oma-impact-grid p {
-  margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.65;
-}
-
-.oma-solution-grid span,
 .oma-impact-grid span {
   display: inline-flex;
   width: 42px;
@@ -286,12 +277,36 @@
   margin-bottom: 18px;
 }
 
+.oma-impact-grid h3 {
+  margin: 0 0 10px;
+  color: #08264a;
+  font-size: 1.05rem;
+}
+
+.oma-impact-grid p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .oma-impact-grid strong {
   display: block;
   margin-top: 18px;
   color: #c61c64;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Outcome */
+
+.oma-outcome {
+  background: #08264a;
+  color: white;
+}
+
+.oma-outcome h2,
+.oma-outcome p {
+  color: white;
 }
 
 .oma-metric {
@@ -339,6 +354,26 @@
   padding: 14px 16px;
   border-radius: 14px;
 }
+
+.oma-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.oma-skills span {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+/* Pantalla de clave */
+
+.oma-lock-page {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -433,13 +468,23 @@
   font-weight: 700;
 }
 
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .oma-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .oma-complexity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .oma-complexity-card-wide {
+    grid-column: span 2;
+  }
+}
+
 @media (max-width: 900px) {
-  .oma-grid,
-  .oma-modules,
-  .oma-decisions,
-  .oma-list,
-  .oma-complexity-grid,
-  .oma-solution-grid,
   .oma-impact-grid,
   .oma-outcome-list,
   .oma-metric {
@@ -454,7 +499,37 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+  .oma-hero {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+
+  .oma-section,
+  .oma-outcome {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .oma-grid,
+  .oma-complexity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .oma-complexity-card-wide {
+    grid-column: span 1;
+  }
+
+  .oma-solution-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 24px;
+  }
+
+  .oma-solution-item span {
+    font-size: 3rem;
+  }
+
   .oma-lock-form {
     flex-direction: column;
   }
