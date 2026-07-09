@@ -223,88 +223,23 @@
     padding-right: 6%;
   }
 }
+@media (max-width: 900px) {
+  .oma-grid,
+  .oma-modules,
+  .oma-decisions,
+  .oma-list {
+    grid-template-columns: 1fr;
+  }
+
+  .oma-hero,
+  .oma-section,
+  .oma-outcome {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+/* Pega aquí el bloque nuevo de la pantalla de clave */
 .oma-lock-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-  background:
-    radial-gradient(circle at top right, rgba(14, 165, 233, 0.24), transparent 34%),
-    linear-gradient(135deg, #061b3a 0%, #0a2a5c 100%);
-  color: white;
-  font-family: Inter, Arial, sans-serif;
-}
-
-.oma-lock-card {
-  width: 100%;
-  max-width: 480px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 28px;
-  padding: 40px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
-  backdrop-filter: blur(16px);
-}
-
-.oma-lock-card h1 {
-  font-size: 3rem;
-  margin: 0 0 16px;
-}
-
-.oma-lock-card p {
-  color: #dbeafe;
-  line-height: 1.7;
-}
-
-.oma-lock-form {
-  display: flex;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.oma-lock-form input {
-  flex: 1;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-  border-radius: 16px;
-  padding: 14px 16px;
-  font-size: 1.4rem;
-  letter-spacing: 0.25em;
-  outline: none;
-}
-
-.oma-lock-form input::placeholder {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.oma-lock-form button {
-  border: none;
-  background: #0ea5e9;
-  color: white;
-  border-radius: 16px;
-  padding: 14px 20px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.oma-lock-form button:hover {
-  background: #0284c7;
-}
-
-.oma-lock-error {
-  margin-top: 16px;
-  color: #fecaca !important;
-  font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .oma-lock-form {
-    flex-direction: column;
-  }
-
-  .oma-lock-card {
-    padding: 28px;
-  }
+  ...
 }
