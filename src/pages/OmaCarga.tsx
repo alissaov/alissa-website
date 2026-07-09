@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./OmaCarga.css";
 
 export default function OmaCarga() {
-    const [code, setCode] = useState("");
+  const [code, setCode] = useState("");
   const [isAllowed, setIsAllowed] = useState(false);
   const [error, setError] = useState("");
 
@@ -26,7 +26,7 @@ export default function OmaCarga() {
           <p className="oma-eyebrow">Private Case Study</p>
           <h1>Acceso privado</h1>
           <p>
-            Ingresa la clave de 4 dígitos para ver este case study..
+            Ingresa la clave de 4 dígitos para ver este case study.
           </p>
 
           <form onSubmit={handleSubmit} className="oma-lock-form">
