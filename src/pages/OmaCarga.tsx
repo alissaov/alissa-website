@@ -25,9 +25,7 @@ export default function OmaCarga() {
         <section className="oma-lock-card">
           <p className="oma-eyebrow">Private Case Study</p>
           <h1>Acceso privado</h1>
-          <p>
-            Ingresa la clave de 4 dígitos para ver este case study.
-          </p>
+          <p>Ingresa la clave de 4 dígitos para ver este case study.</p>
 
           <form onSubmit={handleSubmit} className="oma-lock-form">
             <input
@@ -47,7 +45,8 @@ export default function OmaCarga() {
       </main>
     );
   }
-   return (
+
+  return (
     <main className="oma-page">
       <section className="oma-hero">
         <p className="oma-eyebrow">Product Owner Case Study</p>
@@ -112,87 +111,114 @@ export default function OmaCarga() {
       </section>
 
       <section className="oma-section oma-highlight">
-        <h2>Challenge & Complexity</h2>
-        <p>
-          El reto principal era transformar reglas operativas de carga
-          aeroportuaria en una experiencia digital clara, guiada y confiable.
-        </p>
-        <p>
-          El cotizador debía considerar variables como recinto, tipo de
-          movimiento, fechas, peso, valor comercial, tipo de cambio, servicios
-          adicionales, cantidades obligatorias y reglas de almacenaje.
-        </p>
+        <div className="oma-section-header">
+          <p className="oma-eyebrow">Project Challenge</p>
+          <h2>Challenge & Complexity</h2>
+          <p>
+            El reto principal fue transformar reglas operativas complejas de
+            carga aeroportuaria en una experiencia digital clara, guiada y
+            confiable.
+          </p>
+        </div>
 
         <div className="oma-complexity-grid">
-          <article>
+          <article className="oma-complexity-card">
+            <div className="oma-card-icon">⚙️</div>
             <h3>Reglas variables</h3>
-            <p>Servicios aplicables por ciudad, recinto o escenario operativo.</p>
+            <p>
+              El cotizador debía considerar recinto, tipo de movimiento,
+              fechas, peso, valor comercial y tipo de cambio.
+            </p>
           </article>
 
-          <article>
+          <article className="oma-complexity-card">
+            <div className="oma-card-icon">📍</div>
+            <h3>Servicios aplicables</h3>
+            <p>
+              Servicios obligatorios y adicionales según ciudad, recinto o
+              escenario operativo.
+            </p>
+          </article>
+
+          <article className="oma-complexity-card">
+            <div className="oma-card-icon">🧮</div>
             <h3>Riesgo de errores</h3>
-            <p>Cálculos sensibles a tipo de cambio, cantidades y datos operativos.</p>
+            <p>
+              Cálculos sensibles a tipo de cambio, cantidades y datos
+              operativos.
+            </p>
           </article>
 
-          <article>
-            <h3>Misceláneos complejos</h3>
-            <p>Conceptos con cantidades específicas que debían reflejarse en el resumen.</p>
-          </article>
-
-          <article>
+          <article className="oma-complexity-card">
+            <div className="oma-card-icon">👥</div>
             <h3>Múltiples usuarios</h3>
-            <p>Experiencia pensada para importadores, exportadores y aerolíneas.</p>
+            <p>
+              Experiencia pensada para importadores, exportadores y aerolíneas.
+            </p>
           </article>
 
-          <article>
+          <article className="oma-complexity-card oma-complexity-card-wide">
+            <div className="oma-card-icon">📈</div>
             <h3>Escalabilidad</h3>
-            <p>Base preparada para integraciones, marketplace, chatbot o nuevos módulos.</p>
+            <p>
+              Base preparada para integraciones, marketplace, chatbot o nuevos
+              módulos.
+            </p>
           </article>
         </div>
       </section>
 
       <section className="oma-section">
-        <h2>Product Solution</h2>
-        <p>
-          Se propuso una plataforma modular, responsive y administrable,
-          diseñada para funcionar como canal comercial, herramienta de consulta
-          y base para futuras capacidades digitales.
-        </p>
+        <div className="oma-section-header">
+          <p className="oma-eyebrow">Product Strategy</p>
+          <h2>Product Solution</h2>
+          <p>
+            Se propuso una plataforma modular, responsive y administrable,
+            diseñada para funcionar como canal comercial, herramienta de
+            consulta y base para futuras capacidades digitales.
+          </p>
+        </div>
 
-        <div className="oma-solution-grid">
-          <article>
+        <div className="oma-solution-list">
+          <article className="oma-solution-item">
             <span>01</span>
-            <h3>Website corporativo</h3>
-            <p>
-              Presentación institucional, servicios, noticias, clientes, bolsa de
-              trabajo y contacto.
-            </p>
+            <div>
+              <h3>Website corporativo</h3>
+              <p>
+                Presentación institucional, servicios, noticias, clientes, bolsa
+                de trabajo y contacto.
+              </p>
+            </div>
           </article>
 
-          <article>
+          <article className="oma-solution-item">
             <span>02</span>
-            <h3>Cotizador en línea</h3>
-            <p>
-              Flujo guiado con campos claros, validaciones, reglas de cálculo,
-              servicios adicionales y resumen.
-            </p>
+            <div>
+              <h3>Cotizador en línea</h3>
+              <p>
+                Flujo guiado con campos claros, validaciones, reglas de cálculo,
+                servicios adicionales y resumen.
+              </p>
+            </div>
           </article>
 
-          <article>
+          <article className="oma-solution-item">
             <span>03</span>
-            <h3>Panel administrativo</h3>
-            <p>
-              Gestión interna de contenidos, clientes, noticias, postulaciones,
-              cotizaciones y configuraciones clave.
-            </p>
+            <div>
+              <h3>Panel administrativo</h3>
+              <p>
+                Gestión interna de contenidos, clientes, noticias,
+                postulaciones, cotizaciones y configuraciones clave.
+              </p>
+            </div>
           </article>
 
-          <article>
+          <article className="oma-solution-item">
             <span>04</span>
-            <h3>Arquitectura modular</h3>
-            <p>
-              Base preparada para crecer sin rehacer toda la plataforma.
-            </p>
+            <div>
+              <h3>Arquitectura modular</h3>
+              <p>Base preparada para crecer sin rehacer toda la plataforma.</p>
+            </div>
           </article>
         </div>
       </section>
